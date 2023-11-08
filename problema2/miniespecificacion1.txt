@@ -1,0 +1,19 @@
+1. Inicio
+2. (pedido, x(50)[{a-z},{BS}.{A-Z}
+3. cantidad, i[0-n]
+4. precio_unitario, d[0-n]
+5. costo_pedido, d[0-n]
+6. << "Ingrese el nombre del artículo que se desea realizar un pedido"
+7. >> pedido
+8. << "Ingrese la cantidad que se desea pedir"
+9. >> cantidad
+10. >> "Ingrese el precio unitario que tiene su pedido, " + pedido
+11. << precio_unitario
+12. costo_pedido <-- precio_unitario * cantidad
+13. Si cantidad > 50 entonces
+14.	costo_pedido <-- costo_pedido * 0.15
+15.	<< "Usted ha realizado el pedido de " + cantidad + " " + pedido + ", que al ser una compra mayor a 50 unidades, se le otrogara un descuento del 15%, teniendo que pagar en total " + costo_pedido + "$"
+16. Caso contrario
+17.	<< "Su pedido de " + cantidad + " " + pedido + ", le costara " + costo_pedido + "$"
+18. FinSi
+19. Fin

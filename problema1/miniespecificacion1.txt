@@ -1,0 +1,20 @@
+1. Inicio
+2. kilovatio_hora, d[0-n]
+3. kilovatios_consumidos, d[0-n]
+4. edad, i[0-n]
+5. valor_total, d[0-n]
+6. << "Ingrese su edad"
+7. >> edad
+8. << "Ingrese su valor de kilovatios/hora"
+9. >> kilovatios_hora
+10. >> "Ingrese el numero de kilovatios consumidos al mes"
+11. << kilovatios_consumidos
+12. valor_total <-- kilovatio_hora * kilovatios_consumidos
+13. Si edad > 65 entonces
+14.	valor_total <-- valor_total + 0.10
+15.	<< "Usted ha obtenido un descuento del 10% por ser mayor de 65 años
+16.	<< "Su valor a cancelar es de: " + valor_total + "$"
+17. Caso contrario
+18.	<< "Usted tiene " + edad + "años, por lo tanto, su valor a cancelar es de: " valor_total + "$"
+19. FinSi
+20. Fin 

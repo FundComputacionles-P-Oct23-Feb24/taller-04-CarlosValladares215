@@ -1,0 +1,32 @@
+1. Inicio
+2. numero_dias, i[0-n]
+3. precio_habitacion, d[0-n]
+4. subtotal, d[0-n]
+5. descuento, d[0-n]
+6. total_pagar, d[0-n]
+7. << "Ingrese el precio de la habitacion"
+8. >> precio_habitacion
+9. << "Ingrese el numero de dias en el que se hospedo"
+10. >> numero_dias
+11. subtotal <-- numero_dias * precio_habitacion
+12. Si numero_dias >= 15 entonces
+13.	descuento <-- (subtotal * 20)/100
+14.	total_pagar <-- subtotal - descuento
+15.	<< "Como usted se ha hospedado por más de " + numero_dias + " dias, recibe el 20% de descuento"
+16. Caso contrario
+17.	Si numero_dias >=10 entonces
+18.	descuento <-- (subtotal * 15)/100
+19.	total_pagar <-- subtotal - descuento
+20.	<< "Como usted se ha hospedado por más de " + numero_dias + " dias, recibe el 15% del descuento"
+21.	Caso contrario
+22. 		Si numero_dias >= 5 entonces
+23.			descuento <-- (subtotal * 10)/100
+24.			total_pagar <-- subtotal - descuento
+25.			<< "Como usted se ha hospedado por más de " + numero_dias + " dias, recibe el 10% del descuento"
+26.		Caso contrario
+27.			total_pagar <-- subtotal
+28.		FinSi
+29.	FinSi
+30. FinSi
+31. << "Su total a pagar es de: " + total_pagar + "$"
+32. Fin

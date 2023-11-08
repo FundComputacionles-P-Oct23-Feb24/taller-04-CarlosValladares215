@@ -1,0 +1,17 @@
+1. Inicio
+2. centigrados, d[0-n]
+3. farenheit, d[0-n]
+4. kelvin, d[0-n]
+5. resultado, d[0-n]
+6. << "Ingrese una temperatura en grados centigrados"
+7. >> centigrados
+8. resultado <-- centigrados - centigrados
+9. Si resultado == 0 and centigrados <= 100 entonces
+10.	farenheit <-- (1.8 * centigrados) + 32
+11. 	kelvin <-- centigrados +273.15
+12.	<< centigrados + "C° es igual a " + farenheit + "°F"
+13.	<< centigrados + "°C es igual a " + kelvin + "°K"
+14. Caso contrario
+15.	<< "Solo se pueden ingresar centigrados menores que 101 y positivos"
+16. FinSi
+17. Fin
